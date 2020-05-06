@@ -14,7 +14,11 @@ Wireguard走UDP协议，部分运营商会对UDP进行限速QOS处理使连接�
 
 # 使用方法
 
-> bash <(curl -L -s https://raw.githubusercontent.com/lmc999/WireguardForGame/master/wg-for-game.sh)
+'yum install -y wget && wget https://raw.githubusercontent.com/lmc999/WireguardForGame/master/wg-for-game.sh && chmod +x wg-for-game.sh && ./wg-for-game.sh '
+
+
+执行此命令消除报警提示
+'sudo chmod 600 /etc/wireguard/wg0.conf' 
 
 用Winscp等软件登入VPS,下载目录/etc/wireguard/中的client.conf到Tunsafe配置文件目录
 
